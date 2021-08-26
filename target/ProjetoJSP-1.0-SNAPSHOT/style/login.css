@@ -50,7 +50,7 @@ body .form-login input[type=submit]{
     width: 200px;
     height: 35px;
     border: none;
-    border-radius: 5px;
+    border-radius: 5px'';
     font-size: 16pt;
     margin-left: 4px;
     margin-top: 35px;
@@ -61,4 +61,9 @@ body .form-login input[type=submit]{
 body .form-login span{
     font-size: 16pt;
     margin-left: 4px;
+}
+
+body .form-login p{
+    text-align: center;
+    color: red;
 }

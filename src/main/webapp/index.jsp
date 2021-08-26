@@ -1,4 +1,4 @@
-<%--<jsp:useBean id="" class="Beans.Login" scope="page"/>--%>
+<%@ page import="Beans.Login" %><%--<jsp:useBean id="" class="Beans.Login" scope="page"/>--%>
 <%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
 <!DOCTYPE html>
 <html>
@@ -19,7 +19,13 @@
             <input type="password" id="senha" name="senha" placeholder="Senha">
             <br/>
             <input type="submit" value="Entrar">
+            <br/>
+            <br/>
+            <c:if test="${!empty acessoNegado}">
+            <p>${requestScope.acessoNegado}</p>
+            </c:if>
         </form>
     </div>
+
 </body>
 </html>

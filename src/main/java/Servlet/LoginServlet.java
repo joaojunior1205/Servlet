@@ -20,13 +20,18 @@ public class LoginServlet extends HttpServlet {
 
         String login = request.getParameter("login");
         String senha = request.getParameter("senha");
+        String status = request.getParameter("status");
 
-        if (Login.validarLogin(login, senha)){ // Acesso liberado
+        String acessoNegado = "Login ou senha incorreto";
+
+        if (Login.validarLogin(login, senha, status)){
+            // Acesso liberado
             RequestDispatcher dispatcher = request.getRequestDispatcher("AcessoLiberado.jsp");
             dispatcher.forward(request, response);
         } else{
             // Acesso negado
-            RequestDispatcher dispatcher = request.getRequestDispatcher("AcessoRecusado.jsp");
+            request.setAttribute("acessoNegado", acessoNegado);
+            RequestDispatcher dispatcher = request.getRequestDispatcher("index.jsp");
             dispatcher.forward(request, response);
         }
     }
