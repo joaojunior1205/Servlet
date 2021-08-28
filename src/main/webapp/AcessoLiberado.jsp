@@ -9,6 +9,7 @@
 <html>
 <head>
     <title>Title</title>
+    <link href="Styles/login.css" type="text/css" rel="stylesheet">
 </head>
 <body>
     <h3>Logado com sucesso!</h3>
