@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    font-family: Calibri;
 }
 
 body{
@@ -10,21 +11,23 @@ body{
     color: rgba(255, 255, 255, 0.87);
     display: flex;
     align-items: center;
+    justify-content: flex-end;
 }
 
 body .form-login{
     width: 450px;
-    height: 450px;
+    height: 700px;
     display: flex;
     align-items: center;
     justify-content: center;
     box-shadow: 1px 2px 15px black;
     border-radius: 7px;
     background-color: rgba(0, 0, 0, 0.71);
+    margin-right: 25px;
 }
 
 body .form-login input[type=password]{
-    width: 200px;
+    width: 300px;
     height: 25px;
     border: none;
     outline: 0;
@@ -35,7 +38,7 @@ body .form-login input[type=password]{
 }
 
 body .form-login input[type=text]{
-    width: 200px;
+    width: 300px;
     height: 25px;
     border: none;
     outline: 0;
@@ -46,7 +49,7 @@ body .form-login input[type=text]{
 }
 
 body .form-login input[type=submit]{
-    width: 200px;
+    width: 300px;
     height: 35px;
     border: none;
     border-radius: 5px;
@@ -60,6 +63,12 @@ body .form-login input[type=submit]{
 body .form-login span{
     font-size: 16pt;
     margin-left: 4px;
+}
+
+body .form-login .link{
+    color: #ffffff;
+    text-decoration: none;
+    margin-left: 5px;
 }
 
 body .form-login p{

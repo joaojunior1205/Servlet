@@ -12,15 +12,17 @@
             <span>Login</span>
             <br/>
             <input type="text" id="login" name="login" placeholder="Usuário">
-            <br/>
-            <br/>
+            <br/><br/>
             <span>Senha</span>
             <br/>
             <input type="password" id="senha" name="senha" placeholder="Senha">
             <br/>
             <input type="submit" value="Entrar">
+            <br/><br/>
+            <a href="#" class="link">Registrar</a>
             <br/>
-            <br/>
+            <a href="#" class="link">Esqueci a senha</a>
+            <br/><br/>
             <c:if test="${!empty acessoNegado}">
             <p>${requestScope.acessoNegado}</p>
             </c:if>
