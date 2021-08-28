@@ -22,7 +22,7 @@ public class LoginServlet extends HttpServlet {
         String senha = request.getParameter("senha");
         String status = request.getParameter("status");
 
-        String acessoNegado = "Login ou senha incorreto";
+        String acessoNegado = "Usuário e/ou senha inválidos";
 
         if (Login.validarLogin(login, senha, status)){
             // Acesso liberado
